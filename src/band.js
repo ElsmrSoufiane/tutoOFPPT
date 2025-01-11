@@ -12,6 +12,7 @@ function Band() {
         dispatch(actions.setarticles(category));
         dispatch(actions.filtrarticle(category));
         dispatch(actions.filtrvideo(category));
+        dispatch(actions.setMode("tout"));
     }
 
     return (
