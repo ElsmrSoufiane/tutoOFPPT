@@ -46,7 +46,7 @@ const App = () => {
               <div className="col-sm-3">
                 <div className="logo">
                   
-                 <h1 style={{color:"rgb(1, 1, 149)"}} ><font>doros</font></h1>
+                 <h1 style={{color:"rgb(1, 1, 149)",fontWeight:"bolder",fontSize:"30px"}} ><font>tuto ofppt</font></h1>
                   
                 </div>
               </div>
