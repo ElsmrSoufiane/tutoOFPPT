@@ -46,7 +46,7 @@ const App = () => {
               <div className="col-sm-3">
                 <div className="logo">
                   
-                    <img style={{width:'100px',height:"100px",borderRadius:"20px"}} src="logo.png" alt="Logo" />
+                 <h1 style={{color:"rgb(1, 1, 149)"}} ><font>doros</font></h1>
                   
                 </div>
               </div>
