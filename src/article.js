@@ -1,10 +1,18 @@
 import { useSelector } from "react-redux";
-
+import { motion } from "framer-motion";
 function Article() {
     const article = useSelector((state) => state.tuto.article);
 
     return (
-        <div style={{ maxWidth: "800px", margin: "20px auto", padding: "20px", backgroundColor: "#f9f9f9", borderRadius: "12px", boxShadow: "0 4px 10px rgba(0, 0, 0, 0.1)" }}>
+        <motion.div 
+        initial={{ x: -200 }} // Start off-screen to the left
+    animate={{ x: 0 }}    // Move to the center of the screen
+    transition={{
+      type: "spring",
+      stiffness: 100,  // Controls the rigidity of the spring
+      damping: 20,     // Controls the "bounciness"
+    }}
+    style={{ maxWidth: "800px", margin: "20px auto", padding: "20px", backgroundColor: "#f9f9f9", borderRadius: "12px", boxShadow: "0 4px 10px rgba(0, 0, 0, 0.1)" }}>
             <h1 className="alert-secondary rounded p-3" style={{ textAlign: "center", backgroundColor: "#007bff", color: "#ffffff", borderRadius: "8px" }}>
                 {article.titre}
             </h1>
@@ -17,7 +25,7 @@ function Article() {
                     </div>
                 </div>
             ))}
-        </div>
+        </motion.div>
     );
 }
 

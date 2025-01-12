@@ -9,6 +9,7 @@ import Band from "./band";
 import { useDispatch } from "react-redux";
 import { useSelector } from "react-redux";
 import { actions } from "./slice";
+import { motion } from "framer-motion";
 const App = () => {
   const mode=useSelector(st=>st.tuto.mode);
   const d=useDispatch();
